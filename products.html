@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Produkter - Lilla Konditoriet</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/colors.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    </head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Lilla Konditoriet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Hem</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Om Oss</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Produkter</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2>Våra Produkter</h2>
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-md-4">
+                    <img src="images/chokladtarta.jpg" alt="Chokladtårta" class="img-fluid">
+                    <h4>Chokladtårta</h4>
+                    <p>300 kr</p>
+                    <button onclick="addToCart('Chokladtårta', 300)">Lägg till</button>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-4">
+                    <img src="images/hallonbakelse.jpg" alt="Hallonbakelse" class="img-fluid">
+                    <h4>Hallonbakelse</h4>
+                    <p>40 kr</p>
+                    <button onclick="addToCart('Hallonbakelse', 40)">Lägg till</button>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-4">
+                    <img src="images/kanelbulle.jpg" alt="Kanelbulle" class="img-fluid">
+                    <h4>Kanelbulle</h4>
+                    <p>25 kr</p>
+                    <button onclick="addToCart('Kanelbulle', 25)">Lägg till</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart">
+        <div class="container">
+            <h3>Kundvagn</h3>
+            <div id="cart-items"></div>
+            <p><strong>Total:</strong> <span id="cart-total">0</span> kr</p>
+        </div>
+    </section>
+    
+    <script src="js/site.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
